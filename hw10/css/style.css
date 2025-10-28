@@ -1,0 +1,159 @@
+@font-face{
+	font-family:"Crazy";
+	src: url("../fonts/crazyfont.ttf");
+}
+body {
+	background-color: #C06C84;
+}
+
+p {
+	color: #F8EDE3;
+	border: 15px solid transparent; 
+	border-image: url("images/ocean.jpg") 30 round;
+}
+h4 {
+	font-family: monospace;
+}
+
+.topics{
+	font-family: "Crazy";
+}
+#important1 {
+	font-size: 400%;
+}
+#important2 {
+	text-transform: uppercase;
+}
+p::first-letter {
+  font-size: 200%;
+}
+#important2:hover {
+  color: yellow;
+}
+.nav {
+  height: 100px;
+  background-color: orange;
+  border: 10px solid black;
+  padding: 20px;
+  margin: 30px;
+
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex; 
+  align-items: center; 
+  height: 100%;
+}
+
+.nav li a {
+  display: inline-block;
+  padding: 10px 15px; 
+  color: white;
+  font-size: 200%;
+  text-align: center;
+}
+#important1 {
+  min-height: 40vh;
+  display: grid;
+  place-content: center;
+  grid-auto-flow: column;
+  gap: 25px;
+  background: linear-gradient(#D3CE3D,#ECD078);
+}
+body {
+  background-image: url("../images/jungle.jpg"); 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center center;
+  background-attachment: fixed; 
+}
+.submit_button:hover{
+	background-color: #45a049;
+	transform: translateY(-2px); 
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#text_survey:focus{
+  background-color: gray;
+  outline: 2px solid blue;
+  border-color: yellow;
+}
+body{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.continent_survey{
+	font-size: 1.3rem;
+	line-height: 1.5; 
+	background-color:orange;
+}
+.gallery_images{
+	text-align:center;
+}
+.navbar{
+	position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;      
+  z-index: 1000;
+}
+.flex_grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1rem;
+  padding: 1rem;
+  margin-top: 100px;
+}
+.grid_item {
+  flex: 1 1 calc(50% - 2rem);
+  background-color: #F8EDE3;
+  border: 20px solid red;
+  color: #1B3C53;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.grid_item img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+.flex_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.grid_item {
+  border: 20px solid red;
+  padding: 15px;
+  text-align: center;
+  background-color: lightgray;
+}
+#week_ten {
+    padding: 20px;
+    border: 2px solid grey;
+    font-size: 18px;
+    text-align: center;
+}
+@media (max-width: 799px) {
+    #week_ten {
+        color: green;
+        background-color: black;
+        border-color: green;
+    }
+}
+@media (min-width: 801px) {
+    #week_ten {
+        color: purple;
+        background-color: pink;
+        border-color: purple;
+    }
+}
